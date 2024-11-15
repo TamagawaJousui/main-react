@@ -83,17 +83,63 @@
 }
 
 .bg-gradient {
-  @apply overscroll-none;
-  background: linear-gradient(
-    to bottom,
-    rgb(237, 231, 233) 0%,
-    rgb(109, 170, 214) 15%,
-    rgb(103, 100, 120) 65%,
-    rgb(69, 60, 60) 85%,
-    rgb(20, 20, 20) 100%
-  );
-}
+  /* 将渐变色均匀分成7份 */
+  section:nth-of-type(1) {
+    background: linear-gradient(
+      to bottom,
+      rgb(237, 231, 233) 0%,
+      rgb(146, 182, 219) 100%
+    );
+  }
 
+  section:nth-of-type(2) {
+    background: linear-gradient(
+      to bottom,
+      rgb(146, 182, 219) 0%,
+      rgb(109, 170, 214) 100%
+    );
+  }
+
+  section:nth-of-type(3) {
+    background: linear-gradient(
+      to bottom,
+      rgb(109, 170, 214) 0%,
+      rgb(106, 135, 167) 100%
+    );
+  }
+
+  section:nth-of-type(4) {
+    background: linear-gradient(
+      to bottom,
+      rgb(106, 135, 167) 0%,
+      rgb(103, 100, 120) 100%
+    );
+  }
+
+  section:nth-of-type(5) {
+    background: linear-gradient(
+      to bottom,
+      rgb(103, 100, 120) 0%,
+      rgb(69, 60, 60) 100%
+    );
+  }
+
+  section:nth-of-type(6) {
+    background: linear-gradient(
+      to bottom,
+      rgb(69, 60, 60) 0%,
+      rgb(45, 40, 40) 100%
+    );
+  }
+
+  section:nth-of-type(7) {
+    background: linear-gradient(
+      to bottom,
+      rgb(45, 40, 40) 0%,
+      rgb(20, 20, 20) 100%
+    );
+  }
+}
 @media (min-width: 768px) {
   .bg-gradient {
     /* 将渐变色均匀分成7份 */
